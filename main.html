@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Ragging Presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* Prevent scrollbars from the main body */
+        }
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+        .nav-button {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dot {
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col h-screen antialiased">
+
+    <!-- Slides Container -->
+    <div id="slides-container" class="flex-grow relative w-full">
+        <!-- Slide 1: Title -->
+        <div class="slide active absolute inset-0 w-full h-full flex flex-col justify-center items-center text-center p-8 bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
+            <div class="w-24 h-24 bg-white rounded-full mb-6 flex items-center justify-center text-indigo-600 font-bold text-sm shadow-lg">[Logo]</div>
+            <h1 class="text-5xl md:text-6xl font-black tracking-tight leading-tight">Say NO to Ragging</h1>
+            <h2 class="text-2xl md:text-3xl font-light mt-2 mb-6">Foster a Culture of Respect</h2>
+            <p class="text-lg md:text-xl text-indigo-200">Creating a Safe and Positive Campus for Everyone</p>
+            <p class="mt-12 text-base text-indigo-300">[Your Name / Department Name]</p>
+        </div>
+
+        <!-- Slide 2: What is Ragging? -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-white">
+            <div class="w-full max-w-4xl text-left">
+                <p class="text-5xl mb-4">🧐</p>
+                <h2 class="text-3xl font-bold text-gray-800">It's Not an "Introduction," It's <span class="text-red-600">Abuse.</span></h2>
+                <p class="text-lg text-gray-600 mt-4 mb-6">Ragging is any act that causes or is likely to cause physical or psychological harm, embarrassment, or annoyance to a new student.</p>
+                <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                    <li>Forcing students to perform humiliating or ridiculous acts.</li>
+                    <li>Verbal abuse, insults, or offensive language.</li>
+                    <li>Physical assault or threatening behavior.</li>
+                    <li>Exploiting students for financial or personal gain.</li>
+                </ul>
+                <div class="mt-8 p-4 bg-red-100 border-l-4 border-red-500 rounded-r-lg">
+                    <p class="text-xl font-semibold text-red-700">Key takeaway: Ragging is a violation of human rights.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: The Many Faces of Ragging -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-gray-50">
+             <div class="w-full max-w-5xl text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Ragging Comes in Many Forms—All are Harmful.</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                        <h3 class="font-bold text-xl text-blue-800 mb-2">Verbal & Written</h3>
+                        <p class="text-gray-600">Abusive language, name-calling, forcing someone to write or say something degrading.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500">
+                        <h3 class="font-bold text-xl text-yellow-800 mb-2">Psychological</h3>
+                        <p class="text-gray-600">Creating fear, causing emotional distress, social ostracism, and cyberbullying.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                        <h3 class="font-bold text-xl text-red-800 mb-2">Physical</h3>
+                        <p class="text-gray-600">Pushing, slapping, forcing strenuous physical activity, or any form of assault.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-pink-500">
+                        <h3 class="font-bold text-xl text-pink-800 mb-2">Sexual</h3>
+                        <p class="text-gray-600">Inappropriate touching, sexually explicit comments, or forcing obscene gestures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: The Devastating Impact -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-white">
+            <div class="w-full max-w-4xl text-left">
+                <p class="text-5xl mb-4">💔</p>
+                <h2 class="text-3xl font-bold text-gray-800">The Scars Last a Lifetime.</h2>
+                <div class="mt-6 grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-semibold text-xl text-purple-700 mb-3">Psychological Trauma</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Anxiety, depression, and withdrawal</li>
+                            <li>Post-Traumatic Stress Disorder (PTSD)</li>
+                            <li>Loss of self-esteem and confidence</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-xl text-orange-600 mb-3">Academic Consequences</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Poor concentration and declining grades</li>
+                            <li>Increased absenteeism & drop-out rates</li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-2">
+                         <h3 class="font-semibold text-xl text-red-700 mb-3">Physical Harm</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Injuries ranging from minor to severe</li>
+                            <li>In extreme cases, it can lead to death or suicide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: The Law -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-gray-50">
+            <div class="w-full max-w-4xl text-left">
+                <p class="text-5xl mb-4">⚖️</p>
+                <h2 class="text-3xl font-bold text-gray-800">The Law is Clear: Ragging is a <span class="text-red-700">CRIME.</span></h2>
+                <p class="text-lg text-gray-600 mt-2 mb-6">Ignorance of the Law is No Excuse.</p>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-semibold text-lg text-gray-800">Legal Framework (India):</h3>
+                        <p class="text-gray-600 mt-1"><span class="font-bold">UGC Regulations (2009):</span> Makes ragging a punishable offense.</p>
+                        <p class="text-gray-600 mt-1"><span class="font-bold">Indian Penal Code (IPC):</span> Sections 323, 506 and others apply.</p>
+                    </div>
+                    <div class="p-4 bg-red-100 border-l-4 border-red-500 rounded-r-lg">
+                        <h3 class="font-semibold text-lg text-red-800">Severe Punishments Include:</h3>
+                        <ul class="list-disc list-inside text-red-700 mt-2">
+                            <li>Suspension or expulsion from the institution.</li>
+                            <li>Imprisonment and heavy fines.</li>
+                            <li>Debarment from admission to any other institution.</li>
+                            <li>A permanent negative mark on your academic record.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Role of the Institution -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-white">
+            <div class="w-full max-w-4xl">
+                <h2 class="text-3xl font-bold text-indigo-700 text-center">Our Commitment to You: <br> A Zero-Tolerance Policy</h2>
+                 <div class="mt-8 grid md:grid-cols-2 gap-6 text-lg">
+                    <div class="flex items-start space-x-3">
+                        <span class="text-green-500 font-bold text-2xl mt-1">✓</span>
+                        <p><span class="font-semibold">Anti-Ragging Committee & Squad:</span> Actively monitoring campus.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-green-500 font-bold text-2xl mt-1">✓</span>
+                        <p><span class="font-semibold">CCTV Surveillance:</span> In key areas across the campus.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-green-500 font-bold text-2xl mt-1">✓</span>
+                        <p><span class="font-semibold">Awareness Programs:</span> Regular workshops and orientation sessions.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-green-500 font-bold text-2xl mt-1">✓</span>
+                        <p><span class="font-semibold">Mentorship System:</span> Assigning senior mentors to guide freshers.</p>
+                    </div>
+                    <div class="flex items-start space-x-3 md:col-span-2 md:justify-center">
+                        <span class="text-green-500 font-bold text-2xl mt-1">✓</span>
+                        <p><span class="font-semibold">Anonymous Reporting:</span> Safe channels to report any incident without fear.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Your Role -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-gray-50">
+            <div class="w-full max-w-5xl text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Your Voice Has Power. Use It. <br> Be an <span class="text-green-600">Upstander</span>, Not a Bystander!</h2>
+                <div class="grid md:grid-cols-3 gap-6 text-left">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-blue-800 mb-2">Seniors</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Be a mentor, not a tormentor.</li>
+                            <li>Welcome freshers with respect.</li>
+                            <li>Lead by positive example.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-purple-800 mb-2">Freshers</h3>
+                         <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Know your rights.</li>
+                            <li>Say a firm NO. It is your right.</li>
+                            <li>Report immediately. Don't suffer in silence.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-green-800 mb-2">Everyone</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>If you see something, say something.</li>
+                            <li>Don't be a silent spectator.</li>
+                            <li>Support victims to report.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 8: How & Where to Get Help -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-white">
+            <div class="w-full max-w-4xl text-left">
+                <p class="text-5xl mb-4">🆘</p>
+                <h2 class="text-3xl font-bold text-gray-800">Don't Hesitate. Reach Out Immediately.</h2>
+                <div class="mt-6 grid md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-xl text-blue-800 mb-3">Campus Anti-Ragging Squad</h3>
+                        <p class="text-gray-700"><span class="font-semibold">Contact:</span> [Insert College's Helpline Number]</p>
+                        <p class="text-gray-700 mt-2"><span class="font-semibold">Email:</span> [Insert College's Anti-Ragging Email]</p>
+                        <p class="text-gray-700 mt-2"><span class="font-semibold">Office:</span> [Insert Office Location, e.g., Dean's Office]</p>
+                    </div>
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-xl text-red-800 mb-3">National Helplines</h3>
+                        <p class="text-gray-700 font-bold text-2xl">1800-180-5522</p>
+                        <p class="text-gray-700 mt-2"><span class="font-semibold">UGC Website:</span> www.antiragging.in</p>
+                    </div>
+                </div>
+                <p class="mt-8 text-center text-lg font-semibold text-gray-600">Remember: Your complaint will be kept confidential.</p>
+            </div>
+        </div>
+
+        <!-- Slide 9: Build a Better Campus -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-gray-50">
+            <div class="w-full max-w-4xl text-center">
+                <p class="text-5xl mb-4">🤝</p>
+                <h2 class="text-3xl font-bold text-gray-800">Let's Replace Ragging with Positive Interactions.</h2>
+                <div class="mt-6 text-left w-full md:w-3/4 mx-auto">
+                    <h3 class="font-semibold text-xl text-center mb-4 text-gray-700">Alternatives to Ragging:</h3>
+                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-600">
+                        <li>Organize formal ice-breaking sessions.</li>
+                        <li>Encourage participation in college clubs (sports, arts, tech).</li>
+                        <li>Promote student mentorship programs.</li>
+                        <li>Celebrate a "Friendship Day" or a "Welcome Week" for newcomers.</li>
+                    </ul>
+                </div>
+                 <div class="mt-8 p-4 bg-green-100 border-l-4 border-green-500 rounded-r-lg w-full md:w-3/4 mx-auto">
+                    <p class="text-xl font-semibold text-green-800">Our Goal: A campus where every student feels safe, respected, and welcome.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Take the Pledge -->
+        <div class="slide absolute inset-0 w-full h-full flex items-center justify-center p-8 bg-gradient-to-br from-gray-700 to-gray-900 text-white">
+            <div class="w-full max-w-3xl text-center">
+                <h2 class="text-4xl font-bold mb-8">I Pledge to Make My Campus Ragging-Free.</h2>
+                <div class="text-xl md:text-2xl font-light space-y-6 italic text-gray-200">
+                    <p>"I pledge that I will not engage in any form of ragging."</p>
+                    <p>"I pledge to treat all students, junior or senior, with dignity and respect."</p>
+                    <p>"I pledge to report any incident of ragging that I witness or become aware of."</p>
+                    <p>"I pledge to help create a safe and welcoming environment for everyone."</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 11: Thank You -->
+        <div class="slide absolute inset-0 w-full h-full flex flex-col justify-center items-center text-center p-8 bg-white">
+            <h2 class="text-5xl font-bold text-indigo-600">Thank You</h2>
+            <p class="text-2xl text-gray-700 mt-4 mb-8">Questions & Answers</p>
+            <p class="text-lg text-gray-500">"Let's work together to end ragging for good."</p>
+            <p class="mt-12 text-gray-600">[Your Name / Department Contact]</p>
+        </div>
+
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="bg-white shadow-lg p-3">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <!-- Navigation Buttons -->
+            <div class="flex items-center space-x-2">
+                <button id="prev-btn" class="nav-button px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+                <button id="next-btn" class="nav-button px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed">Next</button>
+            </div>
+            <!-- Slide Indicator Dots -->
+            <div id="dots-container" class="flex items-center justify-center space-x-2">
+                <!-- Dots will be inserted here by JS -->
+            </div>
+            <!-- Slide Counter -->
+            <div class="text-right text-gray-600 text-sm">
+                <span id="current-slide-num">1</span> / <span id="total-slides-num">11</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const dotsContainer = document.getElementById('dots-container');
+        const currentSlideNum = document.getElementById('current-slide-num');
+        const totalSlidesNum = document.getElementById('total-slides-num');
+        
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        // Create indicator dots
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('button');
+            dot.classList.add('dot', 'w-3', 'h-3', 'rounded-full', 'bg-gray-300');
+            dot.addEventListener('click', () => {
+                showSlide(i);
+            });
+            dotsContainer.appendChild(dot);
+        }
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(slideIndex) {
+            // Hide all slides
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+
+            // Show the target slide
+            slides[slideIndex].classList.add('active');
+
+            // Update current slide index
+            currentSlide = slideIndex;
+            
+            // Update UI elements
+            updateControls();
+        }
+
+        function updateControls() {
+             // Update slide number display
+            currentSlideNum.textContent = currentSlide + 1;
+            totalSlidesNum.textContent = totalSlides;
+
+            // Update dots
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-indigo-600');
+                } else {
+                    dot.classList.remove('bg-indigo-600');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+
+            // Update button states
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+        }
+
+        // Event Listeners
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < totalSlides - 1) {
+                showSlide(currentSlide + 1);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                nextBtn.click();
+            } else if (e.key === 'ArrowLeft') {
+                prevBtn.click();
+            }
+        });
+
+        // Initial setup
+        showSlide(0);
+    </script>
+</body>
+</html>
